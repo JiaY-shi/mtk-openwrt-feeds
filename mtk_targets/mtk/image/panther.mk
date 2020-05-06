@@ -1,0 +1,10 @@
+#FIT loadaddr
+KERNEL_LOADADDR := 0x41080000
+
+define Device/MTK-PANTHER-FPGA
+  DEVICE_VENDOR := MediaTek
+  DEVICE_MODEL := MTK Panther FPGA
+  DEVICE_DTS := panther-fpga
+  DEVICE_DTS_DIR := $(DTS_DIR)/mediatek
+endef
+TARGET_DEVICES += MTK-PANTHER-FPGA
